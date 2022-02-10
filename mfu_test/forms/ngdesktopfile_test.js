@@ -16,12 +16,15 @@ function onAction_button(event) {
 		}
 		targetFile = targetFile.replace(/\\/g, '/');
 		plugins.ngdesktopfile.writeFile(targetFile,excelContents);
+		application.sleep(5000)
+		targetFile = '"' + targetFile + '"';
+		var osName = application.getOSName();
+		if (/Windows/.test(osName)) {
+			plugins.ngdesktoputils.executeCommand('rundll32', ['url.dll,FileProtocolHandler', targetFile]);
+		} else if (/Linux|Freebsd/.test(osName)) {
+			plugins.ngdesktoputils.executeCommand('mozilla', [targetFile]);
+		} else if (/Mac/.test(osName)) {
+			plugins.ngdesktoputils.executeCommand('open', [targetFile]);
+		}
 	}
-}
-
-/**
- * @properties={typeid:24,uuid:"6E3A5AC4-A172-4205-B525-DF8D93E42A95"}
- */
-function writeFile_callback() {
-	plugins.dialogs.showInfoDialog('Write file','File successfully written.')
 }
