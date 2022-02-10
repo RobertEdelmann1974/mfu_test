@@ -36,6 +36,13 @@ uuid:"8FF869E6-0A1B-4342-A20D-CD229E63C309"
 },
 {
 encapsulation:0,
+mimeType:"image/jpeg",
+name:"hoch.jpeg",
+typeid:37,
+uuid:"27467E86-6D79-4B2C-8C69-F08CA2BFFE14"
+},
+{
+encapsulation:0,
 mimeType:"text/css",
 name:"mfu_test.less",
 typeid:37,

@@ -6,7 +6,7 @@
  */
 function onAction_button(event) {
 	if (!scopes.globals.selectedFile) {
-		scopes.globals.selectedFile = 'Excel_mit_Bildern.xlsx' 
+		scopes.globals.selectedFile = 'hoch.jpeg' 
 	}
 	var excelContents = plugins.http.getMediaData("media:///"+scopes.globals.selectedFile)
 	if (excelContents) {

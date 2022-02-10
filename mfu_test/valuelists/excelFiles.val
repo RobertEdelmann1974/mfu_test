@@ -2,7 +2,8 @@ addEmptyValue:1,
 customValues:"Excel_ohne_Bilder_-_450k.xlsx\
 Excel_ohne_Bilder_-_670k.xlsx\
 Excel_ohne_Bilder_-_1.3MB.xlsx\
-Excel_mit_Bildern.xlsx",
+Excel_mit_Bildern.xlsx\
+hoch.jpeg",
 displayValueType:12,
 name:"excelFiles",
 realValueType:12,
