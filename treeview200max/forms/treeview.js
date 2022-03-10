@@ -1,20 +1,27 @@
 /**
  * @type {Number}
  *
- * @properties={typeid:35,uuid:"FF33EEDD-7013-4756-9BAA-95F3C9FF391F",variableType:4}
+ * @properties={typeid:35,uuid:"CF48B71F-ED2E-4BD7-9F39-F640647DCC61",variableType:4}
  */
-var recordsTop = 20
+var recordsTop = 205;
 
 /**
  * @type {Number}
  *
- * @properties={typeid:35,uuid:"365DEC04-BCEB-4DDD-8BC8-876EE580F9D9",variableType:4}
+ * @properties={typeid:35,uuid:"FBC239FA-4122-4F06-9818-9EB1087164F4",variableType:4}
  */
-var recordsChild = 5
+var recordsSub = 5;
+
+/**
+ * @type {Number}
+ *
+ * @properties={typeid:35,uuid:"2C4F1077-EF9E-4E65-B13D-4425146B6D91",variableType:4}
+ */
+var recordsSubSub = 0;
 
 
 /**
- * @properties={typeid:24,uuid:"78CC5E11-B50D-4E19-81CD-A1F98EA88809"}
+ * @properties={typeid:24,uuid:"47B43C67-C8D1-409F-BAD6-A882CC8674AF"}
  */
 function createDemoData() {
 	var dsDemoData = databaseManager.createEmptyDataSet(0, ['flag', 'name', 'path', 'parent_path', 'has_checkbox']);
@@ -28,15 +35,29 @@ function createDemoData() {
 		'',
 		0,
 		]);
-		for (var j = 1; j <= recordsChild; j++) {
-			var subFolderName = folderName + ' - Subfolder ' + j.toString();
-			dsDemoData.addRow([
-			0, 
-			subFolderName,
-			folderName+subFolderName,
-			folderName,
-			0,
-			]);
+		if (recordsSub) {
+			for (var j = 1; j <= recordsSub; j++) {
+				var subFolderName = folderName + ' - Subfolder ' + j.toString();
+				dsDemoData.addRow([
+				0, 
+				subFolderName,
+				folderName+subFolderName,
+				folderName,
+				0,
+				]);
+				if (recordsSubSub) {
+					for (var k = 1; k <= recordsSubSub; k++) {
+						var subSubFolderName = folderName + ' - Subfolder ' + j.toString() + ' - Sub-Subfolder ' + k.toString();
+						dsDemoData.addRow([
+						0, 
+						subSubFolderName,
+						folderName+subFolderName+subSubFolderName,
+						folderName+subFolderName,
+						0,
+						]);
+					}
+				}
+			}
 		}
 	}
 	var ds = dsDemoData.createDataSource('demo_data', [JSColumn.INTEGER, JSColumn.TEXT, JSColumn.TEXT, JSColumn.TEXT, JSColumn.INTEGER]);
@@ -59,7 +80,4 @@ function createDemoData() {
 	// Temp. Titel bis geklärt ist, wieso teilweise ein falsches Konto ausgewählt wird.
 	window.title = 'demo tree';
 	window.show(jsForm.name);
-	
-	
-	
 }

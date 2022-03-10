@@ -6,17 +6,16 @@
  *
  * @private
  *
- * @properties={typeid:24,uuid:"C07D7ED6-21D7-454B-8992-B68D0CC0F01F"}
+ * @properties={typeid:24,uuid:"A750ACF0-BD23-4F10-9DA8-6BA2CD35E940"}
  */
 function onShow(firstShow, event) {
 	refreshTree()
 }
 
-
 /**
  * @AllowToRunInFind
  *
- * @properties={typeid:24,uuid:"11795052-6E7F-4DBE-9033-FCF0C6919198"}
+ * @properties={typeid:24,uuid:"E02249A8-C71A-456E-AFB5-D13A0E41ABF2"}
  */
 function refreshTree() {
 	elements.tree.removeAllRoots();
@@ -31,9 +30,8 @@ function refreshTree() {
 	elements.tree.refresh();
 }
 
-
 /**
- * @properties={typeid:24,uuid:"9EB57C65-4EF6-4DD4-8E92-46DC90528C27"}
+ * @properties={typeid:24,uuid:"96C34A3D-6596-458F-BC85-E4ABCF192916"}
  */
 function initTree() {
 	var ds = 'mem:demo_data';
@@ -51,7 +49,7 @@ function initTree() {
  *
  * @private
  *
- * @properties={typeid:24,uuid:"BE7600A8-3A20-4129-B48F-C25C1F30D5B1"}
+ * @properties={typeid:24,uuid:"1BE1123E-6C27-4EFF-86BF-1B6909BCDF25"}
  */
 function onLoad(event) {
 	initTree();

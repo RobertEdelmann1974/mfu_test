@@ -6,7 +6,7 @@ items:[
 height:500,
 partType:5,
 typeid:19,
-uuid:"23161476-35D8-416E-A202-A908D6362483"
+uuid:"5D941F71-0CEB-464F-853D-2E1CAF6E447C"
 },
 {
 cssPosition:"10,10,10,10,200,100",
@@ -23,14 +23,14 @@ width:"200"
 name:"tree",
 typeName:"servoyextra-dbtreeview",
 typeid:47,
-uuid:"BAB9FE65-6D88-47A4-84D3-E08906CAA51C"
+uuid:"FA6EE11F-12C5-478B-A57C-FD916A778456"
 }
 ],
 name:"tree",
 navigatorID:"-1",
-onLoadMethodID:"BE7600A8-3A20-4129-B48F-C25C1F30D5B1",
-onShowMethodID:"C07D7ED6-21D7-454B-8992-B68D0CC0F01F",
+onLoadMethodID:"1BE1123E-6C27-4EFF-86BF-1B6909BCDF25",
+onShowMethodID:"A750ACF0-BD23-4F10-9DA8-6BA2CD35E940",
 showInMenu:true,
 size:"450,480",
 typeid:3,
-uuid:"468AA8AC-4416-4F84-B098-D2E09C838C2C"
+uuid:"7514BB27-8C67-4CD5-8A26-5C11890CD271"
