@@ -31,6 +31,12 @@ containedForm:"464D6A35-B9F1-4635-8BD3-DD5CA76878A9",
 name:"mfu_test",
 svyUUID:"3C51A8BD-1848-43FE-BB67-A663FBCFE136",
 text:"Multifuleupload"
+},
+{
+containedForm:"A43A0C94-679E-4397-A9B7-A5A33B2B1DE4",
+name:"treeview",
+svyUUID:"DD2E916B-5145-4F63-BBF3-6C0794D830C9",
+text:"treeview"
 }
 ]
 },
